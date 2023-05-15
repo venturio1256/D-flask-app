@@ -1,8 +1,10 @@
-from flask import Flask
+import json
+from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/", methods=['GET'])
 def root():
-    return "Hello from DO App platform!"
+    id = request.args.get('id')
+    return jsonify({'ID': id})
 
