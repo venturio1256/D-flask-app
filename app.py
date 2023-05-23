@@ -7,5 +7,5 @@ app = Flask(__name__)
 @app.route("/", methods=['GET'])
 def root():
     id = request.args.get('id')
-    return jsonify({'ID': id})
+    return jsonify({'IDeal': id})
 
