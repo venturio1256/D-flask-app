@@ -8,4 +8,5 @@ app = Flask(__name__)
 def root():
     id = request.args.get('id')
     return jsonify({'IDealIST': id})
+    
 
