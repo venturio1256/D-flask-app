@@ -8,5 +8,5 @@ app = Flask(__name__)
 def root():
     id = request.args.get('id')
     username = request.args.get('name')
-    return jsonify({'IDealIST ': id,username})
+    return jsonify({'IDealIST ': id, 'Name' : username})
     
